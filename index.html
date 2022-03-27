@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/icons/css/all.min.css" />
+    <title>Population Charts</title>
+  </head>
+  <body class="bg-gray-900 text-gray-200">
+    <!-- SCROLL CONTAINER -->
+    <div data-scroll-container>
+      <!-- SCREEN ONE -->
+      <section
+        data-scroll-section
+        class="w-full h-screen p-6 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-teal-400 text-4xl lg:text-6xl font-black">
+          People === <i class="fa-duotone fa-poo text-stone-500"></i>
+        </h1>
+      </section>
+      <!-- SCREEN TWO (CHART) -->
+      <section
+        data-scroll-section
+        class="w-full h-screen p-6 flex flex-col items-center justify-center"
+      >
+        <h2 class="text-teal-400 text-2xl lg:text-4xl font-bold mb-8">
+          Data provided by UUN
+        </h2>
+        <div
+          id="chart"
+          class="w-full max-w-6xl rounded-md"
+          data-scroll
+          data-scroll-call="chartCall"
+          data-scroll-offset="400"
+        ></div>
+      </section>
+      <!-- SCREEN THREE (PIE CHART) -->
+      <section
+        data-scroll-section
+        class="w-full h-screen p-6 flex flex-col items-center justify-center"
+      >
+        <h2 class="text-rose-400 text-2xl lg:text-4xl font-bold mb-8">
+          Data provided by Great Random
+        </h2>
+        <div
+          id="pie"
+          class="w-full max-w-3xl rounded-md"
+          data-scroll
+          data-scroll-call="pieCall"
+          data-scroll-offset="400"
+        ></div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
